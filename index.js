@@ -39,3 +39,25 @@
 // } else {
 //   console.log("You are not president");
 // }
+
+let nameIs = prompt("What is your name?");
+
+if (nameIs === "Alex") {
+  console.log((account = prompt("What`s your account number?")));
+} else {
+  console.log("Пользователь не найден");
+}
+
+let nameOfVisitor = prompt("What is your name?").toUpperCase;
+let ageOfVisitor = prompt("How old are you?");
+let moneyOfVisitor = prompt("How much money do you have?");
+
+if (
+  nameOfVisitor[0] === "A" &&
+  ageOfVisitor > 20 < 41 &&
+  moneyOfVisitor > 100
+) {
+  console.log("Welcome to our club");
+} else {
+  console.log("Go home");
+}
