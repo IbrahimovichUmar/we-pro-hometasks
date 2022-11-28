@@ -40,24 +40,55 @@
 //   console.log("You are not president");
 // }
 
-let nameIs = prompt("What is your name?");
+// const name = "Alex";
+// const password = 7777;
+// const money = 10000;
 
-if (nameIs === "Alex") {
-  console.log((account = prompt("What`s your account number?")));
+// let userName = prompt("What is your name?");
+
+// if (userName === name) {
+//   let userPwd = +prompt("Your account number?");
+
+//   if (userPwd === password) {
+//     let cashOut = prompt("How much money do you want?");
+
+//     if (cashOut > 0 && cashOut <= money) {
+//       alert(`Hello mr/ms ${name}
+//       Your balance was: ${money}
+//       Your balance now: ${money - cashOut}
+//       You cashed out: ${cashOut}
+//       `);
+//     } else {
+//       console.log("Not enough");
+//     }
+//   } else {
+//     console.log("Wrong password");
+//   }
+// } else {
+//   console.log("Go home");
+// }
+
+let nameOfUser = prompt("What is your name?").toUpperCase();
+
+if (nameOfUser[0] === "A") {
+  let ageOfUser = prompt("How old are you?");
+  if (ageOfUser > 20 && ageOfUser <= 40) {
+    let moneyOfUser = prompt("How much money do you have?");
+    if (moneyOfUser > 100) {
+      let sizeOfUser = prompt("How many are you?");
+      let clubOccupied = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      let freePlace = sizeOfUser - clubOccupied;
+      if (sizeOfUser <= 10) {
+        console.log("Come on");
+      } else {
+        console.log(`There is only ${freePlace} free places`);
+      }
+    } else {
+      console.log("Not enough");
+    }
+  } else {
+    console.log("Wrong age");
+  }
 } else {
-  console.log("Пользователь не найден");
-}
-
-let nameOfVisitor = prompt("What is your name?").toUpperCase;
-let ageOfVisitor = prompt("How old are you?");
-let moneyOfVisitor = prompt("How much money do you have?");
-
-if (
-  nameOfVisitor[0] === "A" &&
-  ageOfVisitor > 20 < 41 &&
-  moneyOfVisitor > 100
-) {
-  console.log("Welcome to our club");
-} else {
-  console.log("Go home");
+  console.log("Wrong name");
 }
