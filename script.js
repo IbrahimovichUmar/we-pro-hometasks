@@ -1,50 +1,63 @@
-let arr = {
-  name: "Alex",
-  age: 23,
-  gender: "male",
-  account: "30000",
-  married: true,
-  familyMembers: 5,
-  children: ["Tom", "Beer", "Deer"],
-  abilities: {
-    swimming: true,
-    running: 20,
-    drawing: true,
-    dancing: false,
+// Exercise 1
+let arr = [
+  {
+    model: "BMW",
+    motorType: "turbo",
+    costs: 45000,
   },
-  workPlaces: {
-    marketing: "In USA",
-    programming: "In Great Britain",
-    blogPost: "In Italy",
+  {
+    model: "Lamborghini",
+    motorType: "turbo-flex",
+    costs: 90000,
   },
-};
-let newObj = {};
-let firstObj = arr.abilities;
-let secondObj = arr.workPlaces;
-let addObj = Object.assign(newObj, firstObj, secondObj);
-console.log(addObj);
+  {
+    model: "Lacetti",
+    motorType: "simple",
+    costs: 20000,
+  },
+  {
+    model: "Spark",
+    motorType: "simple-granit",
+    costs: 15000,
+  },
+  {
+    model: "Matiz",
+    motorType: "mini-granit",
+    costs: 5000,
+  },
+  {
+    model: "Jaguar",
+    motorType: "ultra-turbo",
+    costs: 95000,
+  },
+];
 
-let arrKeys = [];
-let addKeys = arrKeys.push(Object.keys(newObj));
-console.log(arrKeys);
-
-let arrValues = [];
-let addValues = arrValues.push(Object.values(newObj));
-console.log(arrValues);
-
-let contactArr = arrKeys.concat(arrValues);
-console.log(contactArr);
-
-let types = {
-  string: [],
-  number: [],
-  object: [],
-  boolean: [],
-};
-contactArr.filter((dataTypes) => {
-  if (dataTypes.typeof === "string") {
-    console.log(types.string.push(dataTypes));
-  } else {
-    console.log("Uncorrect");
+// Filter
+const filterFnc = arr.filter((item) => {
+  if (item.costs < 35000) {
+    return item;
   }
 });
+
+console.log(filterFnc);
+
+// Map
+const mapFnc = arr.map((item) => {
+  if (item.costs < 35000) {
+    return item;
+  }
+});
+
+console.log(mapFnc);
+
+// For Each
+let cheap = [];
+
+arr.forEach((item) => {
+  if (item.costs < 35000) {
+    cheap.push(item);
+  }
+});
+console.log(cheap);
+
+// Exercise 4
