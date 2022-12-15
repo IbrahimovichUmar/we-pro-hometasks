@@ -1,63 +1,94 @@
-// Exercise 1
+// let n = +prompt();
+
+// for (let i = 1; i <= 10; i++) {
+//   document.write(`${n} * ${i} = ${n * i} </br>`);
+// }
+// console.log([1, 2, 3, 4].filter((item) => item % 2 === 0));
+
 let arr = [
   {
-    model: "BMW",
-    motorType: "turbo",
-    costs: 45000,
+    userId: 1,
+    id: 1,
+    title: "delectus aut au`tem",
+    completed: false,
   },
   {
-    model: "Lamborghini",
-    motorType: "turbo-flex",
-    costs: 90000,
+    userId: 1,
+    id: 2,
+    title: "quis ut nam facilis et officia qui",
+    completed: false,
   },
   {
-    model: "Lacetti",
-    motorType: "simple",
-    costs: 20000,
+    userId: 1,
+    id: 3,
+    title: "fugiat veniam minus",
+    completed: false,
   },
   {
-    model: "Spark",
-    motorType: "simple-granit",
-    costs: 15000,
+    userId: 1,
+    id: 4,
+    title: "et porro tempora",
+    completed: true,
   },
   {
-    model: "Matiz",
-    motorType: "mini-granit",
-    costs: 5000,
+    userId: 1,
+    id: 5,
+    title: "laboriosam mollitia et enim quasi adipisci quia provident illum",
+    completed: false,
   },
   {
-    model: "Jaguar",
-    motorType: "ultra-turbo",
-    costs: 95000,
+    userId: 1,
+    id: 6,
+    title: "qui ullam ratione quibusdam voluptatem quia omnis",
+    completed: false,
+  },
+  {
+    userId: 1,
+    id: 7,
+    title: "illo expedita consequatur quia in",
+    completed: false,
+  },
+  {
+    userId: 1,
+    id: 8,
+    title: "quo adipisci enim quam ut ab",
+    completed: true,
+  },
+  {
+    userId: 1,
+
+    id: 9,
+    title: "molestiae perspiciatis ipsa",
+    completed: false,
+  },
+  {
+    userId: 1,
+    id: 10,
+    title: "illo est ratione doloremque quia maiores aut",
+    completed: true,
   },
 ];
+let a = {
+  count: 0,
+  arr: [],
+};
 
-// Filter
-const filterFnc = arr.filter((item) => {
-  if (item.costs < 35000) {
-    return item;
+let b = {
+  count: 0,
+  arr: [],
+};
+
+for (let i = 0; i <= arr.length - 1; i++) {
+  if (arr[i].completed === true) {
+    a.arr.push(arr[i]);
+    a.count++;
+  } else {
+    b.arr.push(arr[i]);
+    b.count++;
   }
-});
+}
+console.log(a, b);
 
-console.log(filterFnc);
-
-// Map
-const mapFnc = arr.map((item) => {
-  if (item.costs < 35000) {
-    return item;
-  }
-});
-
-console.log(mapFnc);
-
-// For Each
-let cheap = [];
-
-arr.forEach((item) => {
-  if (item.costs < 35000) {
-    cheap.push(item);
-  }
-});
-console.log(cheap);
-
-// Exercise 4
+// for (let item of arr) {
+//   console.log(item);
+// }
