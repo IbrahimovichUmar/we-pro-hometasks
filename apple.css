@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+/* .header-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+} */
+.header {
+  display: flex;
+  background-color: #3c3c3e;
+  height: 44px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  color: white;
+}
+li {
+  margin-right: 40px;
+  font-size: 12px;
+}
+ul img {
+  margin-right: 30px;
+}
+.search {
+  margin-top: 42px;
+}
+
+.banner-content {
+  padding-top: 80px;
+}
+.banner-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.left {
+  width: 50%;
+}
+.left span {
+  color: rgb(180, 22, 22);
+  font-weight: 550;
+  font-size: larger;
+}
+.left h1 {
+  padding-top: 10px;
+  font-size: 51px;
+}
+.left p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.cash-back {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px 8px 8px;
+  margin-left: 500px;
+  margin-top: 10px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  width: 250px;
+}
+
+/* Banner Body*/
+
+.banner-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.img-content {
+  width: 75%;
+}
+.img-content img {
+  height: 700px;
+  width: 100%;
+  border-radius: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+}
+.scroll-content {
+  width: 25%;
+  padding: 150px 0 0 70px;
+}
+
+/* Scroll Content */
+.scroll-content h2 {
+  color: black;
+  margin-top: 10px;
+}
+.scroll-content span {
+  color: #7d7d7f;
+}
+.scroll-content p.right {
+  width: 100px;
+  font-size: 12px;
+}
+.scroll-content div.card {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 120px;
+  border: 1px solid rgb(167, 165, 165);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+}
+.card-3 {
+  flex-direction: column;
+  background-color: #f3f3f3;
+  height: 100px;
+}
+
+.pick-color {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.pick-color h2 {
+  color: black;
+  margin-top: 10px;
+}
+.pick-color span {
+  color: #7d7d7f;
+}
+.pick-color p {
+  font-size: 14px;
+  padding-top: 20px;
+}
+.pick-color button.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+}
+.color {
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+  margin-top: 20px;
+}
+.one {
+  background-color: rgb(57, 57, 68);
+  color: rgb(57, 57, 68);
+}
+.two {
+  background-color: rgb(223, 141, 198);
+  color: rgb(223, 141, 198);
+}
+.three {
+  background-color: rgb(74, 255, 252);
+  color: rgb(74, 255, 252);
+}
+.four {
+  background-color: rgb(145, 145, 145);
+  color: rgb(145, 145, 145);
+}
