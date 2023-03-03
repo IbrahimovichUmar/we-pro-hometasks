@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.banner_head_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 250px 0px 250px;
+}
+.banner_head_content h1 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+.banner_head_content p {
+  text-align: center;
+  margin-top: 20px;
+}
+.banner_img_content {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.left {
+  width: 50%;
+}
+.left img {
+  float: right;
+}
+.right {
+  margin-left: 80px;
+  width: 50%;
+  padding-top: 50px;
+}
+
+.right h2 {
+  font-size: 40px;
+}
+.right span {
+  color: aqua;
+  font-weight: 700;
+}
+.right p {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+button {
+  width: 155px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #cfe7ff;
+  color: gray;
+}
+.modal_btn {
+  width: 100px;
+  border-radius: 0;
+  background-color: rgb(113, 113, 113);
+  float: right;
+  color: white;
+  font-weight: 500;
+}
+.modal_close {
+  float: right;
+  margin: 10px 10px 0px 0px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.modal_btn:hover {
+  background-color: black;
+}
+button:hover {
+  background-color: #007fff;
+  color: white;
+  transition: 0.3s;
+  cursor: grab;
+}
+.active {
+  background-color: #007fff;
+  color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  margin-top: 20px;
+}
+
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.choose_content div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 321px;
+  height: 57px;
+  border: 2px solid #007fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.choose_content div:hover {
+  cursor: pointer;
+  border: 3px solid #007fff;
+}
+
+.modal_background {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.39);
+  width: 100%;
+  height: 100vh;
+}
+.modal_content {
+  width: 700px;
+  height: 500px;
+  background-color: rgb(97, 97, 97);
+}
+.modal_content p {
+  margin: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.not_active {
+  display: none;
+}
+.active {
+  display: flex;
+}
